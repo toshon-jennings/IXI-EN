@@ -63,7 +63,7 @@ Each image conveys only one core structure. The prompt must include:
 - Xiaohei as the core action subject
 - No PPT, commercial illustration, childish cute, complex architecture, top-left type titles
 
-Don't replicate past examples. Examples only provide style density and Xiaohei participation patterns — don't directly reuse known compositions like "conveyor belt breakpoints / Xiaohei pulling judgment lever / Xiaohei sorting funnel / Xiaohei cutting素材 fish" unless the user explicitly requests a replica of a specific image. Each time, reinvent a strange-but-coherent metaphor from the current article.
+Don't replicate past examples. Examples only provide style density and Xiaohei participation patterns — don't directly reuse known compositions like "conveyor belt breakpoints / Xiaohei pulling judgment lever / Xiaohei sorting funnel / Xiaohei cutting material fish" unless the user explicitly requests a replica of a specific image. Each time, reinvent a strange-but-coherent metaphor from the current article.
 
 ### 4. Check and Iterate
 
