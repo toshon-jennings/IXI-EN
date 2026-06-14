@@ -70,7 +70,7 @@ This skill defaults to Ian's "Xiaohei quirky body illustration" style:
 
 ---
 
-## Example Output
+## Example Outputs (Chinese)
 
 ### Two Breakpoints
 
