@@ -1,15 +1,19 @@
 ---
 name: ian-xiaohei-illustrations
-description: Generate Ian-style Chinese article body illustrations. Use when the user asks to create "quirky", "Xiaohei", "hand-drawn", "body illustrations", "article images", "illustration suggestions", "shot list", "remove title / edit image" for Chinese articles, posts, blogs, Notion documents, workflow documents, methodologies, processes, structures, states, metaphors, or viewpoints. Defaults to the Xiaohei IP, pure white hand-drawn style, minimal red/orange/blue annotations, clean yet wildly creative visual language.
+description: Generate Ian-style English article body illustrations. Use when the user asks to create "quirky", "Xiaohei", "hand-drawn", "body illustrations", "article images", "illustration suggestions", "shot list", "remove title / edit image" for English articles, posts, blogs, Notion documents, workflow documents, methodologies, processes, structures, states, metaphors, or viewpoints. Defaults to the Xiaohei IP, pure white hand-drawn style, minimal red/orange/blue annotations, clean yet wildly creative visual language.
 ---
 
 # Ian Xiaohei Quirky Body Illustrations
 
 ## Core Positioning
 
-Design and generate landscape 16:9 body illustrations for Chinese articles. The goal is not commercial illustration, PPT infographics, or cute cartoons — but transforming key judgments, processes, structures, states, or metaphors from an article into a clean, quirky, creative, readable hand-drawn explanatory illustration that doesn't read like an instruction manual.
+Design and generate landscape 16:9 body illustrations for English articles. The goal is not commercial illustration, PPT infographics, or cute cartoons — but transforming key judgments, processes, structures, states, or metaphors from an article into a clean, quirky, creative, readable hand-drawn explanatory illustration that doesn't read like an instruction manual.
 
 The default visual IP is "Xiaohei": solid black, white dot eyes, thin legs, blank expression, seriously doing something absurd but coherent. Xiaohei must participate in the core action of the image — never just standing aside as decoration.
+
+## Compatibility
+
+This skill is designed to work with any AI coding assistant that supports skill loading and image generation, including but not limited to: Claude Code, Cursor, GitHub Copilot, Codex, OpenCode, and similar tools. It uses the agent's built-in image generation capability and does not depend on any specific platform's invocation syntax.
 
 ## Read These References First
 
@@ -45,20 +49,20 @@ If the user just asks to "analyze how to illustrate / think about where images a
 - Structure type
 - What Xiaohei is doing in the image
 - Suggested elements
-- Suggested Chinese annotation words
+- Suggested annotation words
 
 Default 4-8 images. For short articles, 1-3 images; for long articles, don't exceed 9 without good reason. Enough is enough — don't turn the article into a picture book.
 
 ### 3. Single Image Generation
 
-If the user explicitly asks to "generate / output / make / help me generate", don't wait for confirmation — generate each image individually using the built-in `image_gen`. Don't compose multiple images into one.
+If the user explicitly asks to "generate / output / make / help me generate", don't wait for confirmation — generate each image individually using the built-in image generation tool. Don't compose multiple images into one.
 
 Each image conveys only one core structure. The prompt must include:
 
-- Landscape 16:9 Chinese body illustration
+- Landscape 16:9 English body illustration
 - Pure white background
 - Black hand-drawn line art
-- Small amounts of red/orange/blue handwritten Chinese annotations
+- Small amounts of red/orange/blue handwritten English annotations
 - Generous white space
 - Xiaohei as the core action subject
 - No PPT, commercial illustration, childish cute, complex architecture, top-left type titles
@@ -72,11 +76,11 @@ Check against `references/qa-checklist.md` after generation. If any of the follo
 - Xiaohei is just decoration
 - Image is too cluttered
 - Too much like a flowchart/PPT
-- Too many Chinese characters or severe wrong characters
+- Too many words or severe text rendering errors
 - Top-left corner has titles like "Common Pitfalls / Workflow / System Architecture / Roadmap"
 - Style is too cute, childish, or rigid
 - Background is not clean white
-- Severe Chinese annotation errors
+- Severe annotation text errors
 
 ### 5. Save and Deliver
 
