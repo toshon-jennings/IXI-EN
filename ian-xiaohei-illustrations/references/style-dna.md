@@ -2,7 +2,7 @@
 
 ## One-Liner
 
-Pure white, minimalist, hand-drawn, generous white space, restrained, quirky, product-sketch feel, handwritten Chinese feel, clear structure but not an instruction manual.
+Pure white, minimalist, hand-drawn, generous white space, restrained, quirky, product-sketch feel, handwritten annotation style, clear structure but not an instruction manual.
 
 Like an explanatory sketch drawn on a white sheet of paper by someone who has long worked in AI, product, design, and developer tools.
 
@@ -12,7 +12,7 @@ Like an explanatory sketch drawn on a white sheet of paper by someone who has lo
 - Pure white background: no beige, warm gray, paper texture, gradients, shadows, noise, or vintage paper feel.
 - Black hand-drawn line art as the primary style: thin lines, slight wobble, not mechanical, not vector, not heavy outlines.
 - Generous white space: the main subject occupies roughly 40%-60% of the frame, at least 35% blank, ideally with one large quiet area.
-- Small amounts of handwritten Chinese annotations: maximum 5-8 instances, each ideally 2-8 characters.
+- Small amounts of handwritten English annotations: maximum 5-8 instances, each ideally 1-3 words.
 - Each image conveys only one core action, structure, state, or metaphor.
 - Structure should be expressed naturally — don't label the structure type on the image.
 
