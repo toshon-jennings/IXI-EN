@@ -163,7 +163,7 @@ The image should be quirky but clean. Xiaohei must perform the core action.
 ### Remove Titles or Incorrect Text from an Image
 
 ```text
-Use $ian-xiaohei-illustrations to edit this image — remove the "流程图" title in the top-left corner, keep everything else unchanged.
+Use $ian-xiaohei-illustrations to edit this image — remove the "Flowchart" title in the top-left corner, keep everything else unchanged.
 ```
 
 More examples in [examples/prompts.md](examples/prompts.md).
@@ -246,7 +246,7 @@ The root-level README, LICENSE, NOTICE, and examples are GitHub sharing document
 
 ## About the Author
 
-**Ian (伊恩)** — Product Designer / One-Person Company Practitioner / AI Builder
+**Ian** — Product Designer / One-Person Company Practitioner / AI Builder
 
 Building a one-person company with an AI team.
 
