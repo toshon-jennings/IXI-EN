@@ -10,7 +10,7 @@
 - Image is quirky, creative, interesting.
 - Clean and refreshing, main subject occupies no more than about 60% of the frame.
 - Each image conveys only one core structure.
-- Chinese annotations are few, short, and readable.
+- English annotations are few, short, and readable.
 - Orange is used only for main paths or arrows.
 - Red is used only for key points, problems, reminders, or results.
 - Blue is used only for supplementary explanations, feedback, or system states.
@@ -26,7 +26,7 @@ If any of the following appear, regenerate or do local editing:
 - Text becomes long-form explanation.
 - Background has paper texture, shadows, gradients, beige, or noise.
 - Real UI screenshots or tech-style interfaces.
-- Severe Chinese character errors or unreadable annotations.
+- Severe text rendering errors or unreadable annotations.
 - Image is too rigid, with no absurd metaphor.
 - Composition is too similar to old examples in `assets/examples/`.
 
@@ -37,7 +37,7 @@ If any of the following appear, regenerate or do local editing:
 - Too cute: emphasize deadpan, blank serious expression, not cute, not mascot.
 - Too PPT-like: remove titles, borders, neat grids, and excessive arrows; change to a hand-drawn scene.
 - Too similar to old examples: keep the core meaning, swap out the main objects and Xiaohei's action.
-- Wrong characters: prioritize local editing; if many errors, regenerate with fewer annotations.
+- Text rendering errors: prioritize local editing; if many errors, regenerate with fewer annotations.
 
 ## Delivery Judgment
 
