@@ -1,19 +1,16 @@
-# IXI-EN: Ian Xiaohei Illustrations
+# Ian Xiaohei Illustrations
 
-> Transform the judgments, processes, states, and metaphors in Chinese articles into white-background, hand-drawn, quirky yet clean body illustrations.
+> Transform the judgments, processes, states, and metaphors in English articles into white-background, hand-drawn, quirky yet clean body illustrations.
 >
-> Landscape 16:9 | Xiaohei IP | Pure white hand-drawn | Minimal red/orange/blue Chinese annotations | Codex Skill
+> Landscape 16:9 | Xiaohei IP | Pure white hand-drawn | Minimal red/orange/blue English annotations | AI Agent Skill
 
 ---
 
 ## What Is This Repository
 
-IXI-EN is an English language version of Ian Xiaohei Illustrations, "a Codex Skill that guides AI Agents to generate body illustrations for Chinese articles, posts, blogs, Notion documents, and methodology content." I have not only translated the text of the repo into English, but the output of the skill itself. Also, this skill is designed to be available to all agents.
+Ian Xiaohei Illustrations is an AI agent skill that guides coding assistants to generate body illustrations for English articles, posts, blogs, Notion documents, and methodology content.
 
-
-Translated from [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations/tree/main):
-
-It is not a general-purpose illustration prompt, nor a PPT infographic template. Its core goal is: first, to understand the cognitive anchors in an article; then, turn one judgment, process, structure, state, or metaphor into a memorable 16:9 hand-drawn explanatory illustration.
+It is not a general-purpose illustration prompt, nor a PPT infographic template. Its core goal is: first understand the cognitive anchors in an article, then turn one judgment, process, structure, state, or metaphor into a memorable 16:9 hand-drawn explanatory illustration.
 
 The default visual IP is "Xiaohei" (Little Black): a small solid-black creature with white dot eyes, thin legs, and a blank expression. Xiaohei is not a mascot, not a sticker, not a decorative figure standing in the corner — but an absurd worker genuinely participating in the system's operation.
 
@@ -25,11 +22,11 @@ In one sentence: **make AI do more than "add an image" — draw one key cognitiv
 
 Best suited for:
 
-- People who write (English) articles and need body illustrations and article images
+- People who write English articles and need body illustrations and article images
 - Creators of knowledge content, methodology content, and AI workflow content
 - People who want to turn abstract judgments into concrete metaphors
 - People who want an illustration style that is lighter, quirkier, and more personally distinctive than PPT infographics
-- People using AI agents for content production who want to reuse a consistent visual language
+- People using AI coding assistants for content production who want to reuse a consistent visual language
 
 Not suited for:
 
@@ -47,7 +44,7 @@ Default output:
 
 - Landscape 16:9 body illustrations
 - A shot list of 4-8 images per article
-- For each image: theme, core meaning, structure type, Xiaohei's action, and suggested (English) annotations
+- For each image: theme, core meaning, structure type, Xiaohei's action, and suggested annotation words
 - Final PNG images saved to `assets/<article-slug>-illustrations/` in the workspace
 
 Not produced by default:
@@ -66,7 +63,7 @@ This skill defaults to Ian's "Xiaohei quirky body illustration" style:
 - Pure white background — no paper texture, beige, shadows, or gradients
 - Black hand-drawn line art, thin lines, slight wobble
 - Generous white space — the main subject occupies roughly 40%-60% of the frame
-- Small amounts of red, orange, and blue handwritten (English) annotations
+- Small amounts of red, orange, and blue handwritten English annotations
 - Each image expresses only one core action, structure, state, or metaphor
 - Xiaohei must participate in the core action — never just decoration
 - Quirky, creative, and clean — but not childish, not cute
@@ -97,7 +94,7 @@ This skill defaults to Ian's "Xiaohei quirky body illustration" style:
 
 ### Idea Press
 
-![Idea Press](images/examples/06-idea-press.png)
+![Idea Press](examples/images/06-idea-press.png)
 
 ### Content Fermentation
 
@@ -120,53 +117,63 @@ git clone https://github.com/toshon-jennings/IXI-EN.git
 cd IXI-EN
 ```
 
-Copy the skill to your Codex skills directory:
+Copy the skill directory to your AI coding assistant's skills folder. The exact path depends on your tool:
 
 ```bash
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-cp -R ./ian-xiaohei-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
+# Example: Claude Code
+cp -R ./ian-xiaohei-illustrations ~/.claude/skills/
+
+# Example: Cursor
+cp -R ./ian-xiaohei-illustrations .cursor/skills/
+
+# Example: Generic
+cp -R ./ian-xiaohei-illustrations <your-assistant>/skills/
 ```
 
-After installation, use in Codex:
-
-```text
-Use $ian-xiaohei-illustrations to design and generate 5 quirky Xiaohei body illustrations for this article.
-```
+Consult your coding assistant's documentation for the correct skills directory path.
 
 ---
 
 ## How to Use
 
+Invoke the skill through your coding assistant. The exact invocation syntax depends on your tool. Generally, you ask your assistant to use the skill by name or describe what you want:
+
 ### Illustration Planning Only
 
-```text
-Use $ian-xiaohei-illustrations — don't generate images yet.
-Please analyze where this article would benefit from illustrations, and output a shot list of about 5 images.
-For each image, specify: which paragraph it follows, the theme, core meaning, structure type, what Xiaohei is doing, and suggested ENglish annotation words.
+Ask your assistant to analyze where the article would benefit from illustrations and output a shot list. For example:
+
+```
+Don't generate images yet. Analyze where this article would benefit from illustrations,
+and output a shot list of about 5 images. For each image, specify: which paragraph it
+follows, the theme, core meaning, structure type, what Xiaohei is doing, and suggested
+annotation words.
 
 <paste article>
 ```
 
 ### Generate Body Illustrations Directly
 
-```text
-Use $ian-xiaohei-illustrations to generate 4 quirky Xiaohei body illustrations from the article below.
-Requirements: landscape 16:9, pure white background, black hand-drawn line art, small amounts of red/orange/blue handwritten English annotations.
+```
+Generate 4 quirky Xiaohei body illustrations from the article below.
+Requirements: landscape 16:9, pure white background, black hand-drawn line art,
+small amounts of red/orange/blue handwritten English annotations.
 
 <paste article>
 ```
 
 ### Generate One Image for a Single Concept
 
-```text
-Use $ian-xiaohei-illustrations to generate a body illustration for: "Trust isn't shouted into existence — it's paved with evidence, piece by piece."
-The image should be quirky but clean. Xiaohei must perform the core action.
+```
+Generate a body illustration for: "Trust isn't shouted into existence — it's paved
+with evidence, piece by piece." The image should be quirky but clean. Xiaohei
+must perform the core action.
 ```
 
 ### Remove Titles or Incorrect Text from an Image
 
-```text
-Use $ian-xiaohei-illustrations to edit this image — remove the "Flowchart" title in the top-left corner, keep everything else unchanged.
+```
+Edit this image — remove the "Flowchart" title in the top-left corner,
+keep everything else unchanged.
 ```
 
 More examples in [examples/prompts.md](examples/prompts.md).
@@ -183,9 +190,24 @@ The skill's workflow:
 4. For each image, select a structure type: Workflow, system detail, before/after comparison, character state, concept metaphor, method layering, map route, or mini-comic panels
 5. Reinvent a low-tech, quirky-but-coherent physical metaphor
 6. Make Xiaohei perform the core action
-7. Generate each image individually using the image model
+7. Generate each image individually using the image generation tool
 8. Check against the QA checklist: white background, white space, Xiaohei action, English annotations, non-PPT feel, non-old-example-replica
 9. Save final PNGs and report usage and file paths
+
+---
+
+## Compatibility
+
+This skill works with any AI coding assistant that supports skill loading and image generation, including:
+
+- Claude Code
+- Cursor
+- GitHub Copilot
+- Codex
+- OpenCode
+- Similar tools with skill/plugin systems and image generation capabilities
+
+The skill uses standard Markdown files for instructions and references. It does not depend on any specific platform's proprietary invocation syntax.
 
 ---
 
@@ -218,7 +240,7 @@ The skill's workflow:
         └── qa-checklist.md
 ```
 
-The subdirectory that needs to be installed into Codex is:
+The subdirectory to install into your assistant's skills folder is:
 
 ```
 ian-xiaohei-illustrations/
@@ -230,12 +252,12 @@ The root-level README, LICENSE, NOTICE, and examples are GitHub sharing document
 
 ## Notes
 
-- The shorter the English text in the image, the more stable the generation.
+- Keep annotation text short — shorter labels produce more stable generations.
 - Each image should convey only one core structure — don't turn the article into an instruction manual.
 - Xiaohei must perform the core action; if the image still makes complete sense with Xiaohei removed, Xiaohei is too decorative.
 - Example images are for calibrating line density, white space, color restraint, and Xiaohei participation style only — do not copy their compositions.
-- AI image models may produce wrong characters, hallucinated labels, style drift, or unnecessary titles — check after generation.
-- If English character errors are severe, prioritize reducing annotation words and regenerating.
+- AI image models may produce misspelled words, hallucinated labels, style drift, or unnecessary titles — check after generation.
+- If text rendering errors are severe, prioritize reducing annotation words and regenerating.
 
 ---
 
@@ -247,8 +269,26 @@ The root-level README, LICENSE, NOTICE, and examples are GitHub sharing document
 
 ---
 
-## [About Ian](https://github.com/helloianneo) — Product Designer / One-Person Company Practitioner / AI Builder
+## About the Author
 
+**Ian** — Product Designer / One-Person Company Practitioner / AI Builder
+
+Building a one-person company with an AI team.
+
+- GitHub: [helloianneo](https://github.com/helloianneo)
+- X/Twitter: [@ianneo_ai](https://x.com/ianneo_ai)
+- Website: [www.ianneo.xyz](https://www.ianneo.xyz)
+- Email: hello.neoc@gmail.com
+
+---
+
+## Keep Exploring
+
+This Xiaohei illustration Skill is just one small tool in my personal production system built with AI.
+
+If you're also using AI for content, knowledge bases, workflows, or productization, visit my website: [www.ianneo.xyz](https://www.ianneo.xyz).
+
+To follow along, subscribe on [X/Twitter](https://x.com/ianneo_ai).
 
 ---
 
