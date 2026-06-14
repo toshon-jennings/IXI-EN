@@ -1,4 +1,4 @@
-# Ian Xiaohei Illustrations
+# IXI-EN: Ian Xiaohei Illustrations
 
 > Transform the judgments, processes, states, and metaphors in Chinese articles into white-background, hand-drawn, quirky yet clean body illustrations.
 >
@@ -8,7 +8,7 @@
 
 ## What Is This Repository
 
-IXI-EN is an English version of Ian Xiaohei Illustrations, "a Codex Skill that guides AI Agents to generate body illustrations for Chinese articles, posts, blogs, Notion documents, and methodology content." I have not only translated the text of the repo into English, but the output of the skill itself. Also, this skill is designed to be available to all agents.
+IXI-EN is an English language version of Ian Xiaohei Illustrations, "a Codex Skill that guides AI Agents to generate body illustrations for Chinese articles, posts, blogs, Notion documents, and methodology content." I have not only translated the text of the repo into English, but the output of the skill itself. Also, this skill is designed to be available to all agents.
 
 
 Translated from [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations/tree/main):
