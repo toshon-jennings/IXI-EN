@@ -62,7 +62,7 @@ Please reinvent a new low-tech metaphor with Xiaohei participating in the core a
 
 ```text
 Use $ian-xiaohei-illustrations to edit this image.
-Remove the "Workflow / 流程图" title and underline from the top-left corner. Keep everything else unchanged.
+Remove the "Flowchart" title and underline from the top-left corner. Keep everything else unchanged.
 Don't add any new text or objects.
 ```
 
