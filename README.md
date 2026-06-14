@@ -8,9 +8,12 @@
 
 ## What Is This Repository
 
-Ian Xiaohei Illustrations is a Codex Skill that guides AI Agents to generate body illustrations for Chinese articles, posts, blogs, Notion documents, and methodology content.
+IXI-EN is an English version of Ian Xiaohei Illustrations, "a Codex Skill that guides AI Agents to generate body illustrations for Chinese articles, posts, blogs, Notion documents, and methodology content." I have not only translated the text of the repo into English, but the output of the skill itself. Also, this skill is designed to be available to all agents.
 
-It is not a general-purpose illustration prompt, nor a PPT infographic template. Its core goal is: first understand the cognitive anchors in an article, then turn one judgment, process, structure, state, or metaphor into a memorable 16:9 hand-drawn explanatory illustration.
+
+Translated from [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations/tree/main):
+
+It is not a general-purpose illustration prompt, nor a PPT infographic template. Its core goal is: first, to understand the cognitive anchors in an article; then, turn one judgment, process, structure, state, or metaphor into a memorable 16:9 hand-drawn explanatory illustration.
 
 The default visual IP is "Xiaohei" (Little Black): a small solid-black creature with white dot eyes, thin legs, and a blank expression. Xiaohei is not a mascot, not a sticker, not a decorative figure standing in the corner — but an absurd worker genuinely participating in the system's operation.
 
@@ -22,11 +25,11 @@ In one sentence: **make AI do more than "add an image" — draw one key cognitiv
 
 Best suited for:
 
-- People who write Chinese articles and need body illustrations and article images
+- People who write (English) articles and need body illustrations and article images
 - Creators of knowledge content, methodology content, and AI workflow content
 - People who want to turn abstract judgments into concrete metaphors
 - People who want an illustration style that is lighter, quirkier, and more personally distinctive than PPT infographics
-- People using Codex for content production who want to reuse a consistent visual language
+- People using AI agents for content production who want to reuse a consistent visual language
 
 Not suited for:
 
@@ -44,7 +47,7 @@ Default output:
 
 - Landscape 16:9 body illustrations
 - A shot list of 4-8 images per article
-- For each image: theme, core meaning, structure type, Xiaohei's action, and suggested Chinese annotations
+- For each image: theme, core meaning, structure type, Xiaohei's action, and suggested (English) annotations
 - Final PNG images saved to `assets/<article-slug>-illustrations/` in the workspace
 
 Not produced by default:
@@ -63,7 +66,7 @@ This skill defaults to Ian's "Xiaohei quirky body illustration" style:
 - Pure white background — no paper texture, beige, shadows, or gradients
 - Black hand-drawn line art, thin lines, slight wobble
 - Generous white space — the main subject occupies roughly 40%-60% of the frame
-- Small amounts of red, orange, and blue handwritten Chinese annotations
+- Small amounts of red, orange, and blue handwritten (English) annotations
 - Each image expresses only one core action, structure, state, or metaphor
 - Xiaohei must participate in the core action — never just decoration
 - Quirky, creative, and clean — but not childish, not cute
@@ -127,7 +130,7 @@ cp -R ./ian-xiaohei-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
 After installation, use in Codex:
 
 ```text
-Use $ian-xiaohei-illustrations to design and generate 5 quirky Xiaohei body illustrations for this Chinese article.
+Use $ian-xiaohei-illustrations to design and generate 5 quirky Xiaohei body illustrations for this article.
 ```
 
 ---
@@ -139,7 +142,7 @@ Use $ian-xiaohei-illustrations to design and generate 5 quirky Xiaohei body illu
 ```text
 Use $ian-xiaohei-illustrations — don't generate images yet.
 Please analyze where this article would benefit from illustrations, and output a shot list of about 5 images.
-For each image, specify: which paragraph it follows, the theme, core meaning, structure type, what Xiaohei is doing, and suggested Chinese annotation words.
+For each image, specify: which paragraph it follows, the theme, core meaning, structure type, what Xiaohei is doing, and suggested ENglish annotation words.
 
 <paste article>
 ```
@@ -148,7 +151,7 @@ For each image, specify: which paragraph it follows, the theme, core meaning, st
 
 ```text
 Use $ian-xiaohei-illustrations to generate 4 quirky Xiaohei body illustrations from the article below.
-Requirements: landscape 16:9, pure white background, black hand-drawn line art, small amounts of red/orange/blue handwritten Chinese annotations.
+Requirements: landscape 16:9, pure white background, black hand-drawn line art, small amounts of red/orange/blue handwritten English annotations.
 
 <paste article>
 ```
@@ -181,7 +184,7 @@ The skill's workflow:
 5. Reinvent a low-tech, quirky-but-coherent physical metaphor
 6. Make Xiaohei perform the core action
 7. Generate each image individually using the image model
-8. Check against the QA checklist: white background, white space, Xiaohei action, Chinese annotations, non-PPT feel, non-old-example-replica
+8. Check against the QA checklist: white background, white space, Xiaohei action, English annotations, non-PPT feel, non-old-example-replica
 9. Save final PNGs and report usage and file paths
 
 ---
@@ -227,12 +230,12 @@ The root-level README, LICENSE, NOTICE, and examples are GitHub sharing document
 
 ## Notes
 
-- The shorter the Chinese text in the image, the more stable the generation.
+- The shorter the English text in the image, the more stable the generation.
 - Each image should convey only one core structure — don't turn the article into an instruction manual.
 - Xiaohei must perform the core action; if the image still makes complete sense with Xiaohei removed, Xiaohei is too decorative.
 - Example images are for calibrating line density, white space, color restraint, and Xiaohei participation style only — do not copy their compositions.
 - AI image models may produce wrong characters, hallucinated labels, style drift, or unnecessary titles — check after generation.
-- If Chinese character errors are severe, prioritize reducing annotation words and regenerating.
+- If English character errors are severe, prioritize reducing annotation words and regenerating.
 
 ---
 
@@ -244,26 +247,8 @@ The root-level README, LICENSE, NOTICE, and examples are GitHub sharing document
 
 ---
 
-## About the Author
+## [About Ian](https://github.com/helloianneo) — Product Designer / One-Person Company Practitioner / AI Builder
 
-**Ian** — Product Designer / One-Person Company Practitioner / AI Builder
-
-Building a one-person company with an AI team.
-
-- GitHub: [helloianneo](https://github.com/helloianneo)
-- X/Twitter: [@ianneo_ai](https://x.com/ianneo_ai)
-- Website: [www.ianneo.xyz](https://www.ianneo.xyz)
-- Email: hello.neoc@gmail.com
-
----
-
-## Keep Exploring
-
-This Xiaohei illustration Skill is just one small tool in my personal production system built with AI.
-
-If you're also using AI for content, knowledge bases, workflows, or productization, visit my website: [www.ianneo.xyz](https://www.ianneo.xyz).
-
-To follow along, subscribe on [X/Twitter](https://x.com/ianneo_ai).
 
 ---
 
